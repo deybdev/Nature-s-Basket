@@ -24,6 +24,7 @@ Partial Class dashboard
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(dashboard))
         Panel1 = New Panel()
+        LinkLabel5 = New LinkLabel()
         LinkLabel4 = New LinkLabel()
         LinkLabel3 = New LinkLabel()
         LinkLabel2 = New LinkLabel()
@@ -47,6 +48,7 @@ Partial Class dashboard
         ' Panel1
         ' 
         Panel1.BackColor = Color.ForestGreen
+        Panel1.Controls.Add(LinkLabel5)
         Panel1.Controls.Add(LinkLabel4)
         Panel1.Controls.Add(LinkLabel3)
         Panel1.Controls.Add(LinkLabel2)
@@ -57,6 +59,21 @@ Partial Class dashboard
         Panel1.Size = New Size(1286, 100)
         Panel1.TabIndex = 3
         ' 
+        ' LinkLabel5
+        ' 
+        LinkLabel5.AutoSize = True
+        LinkLabel5.BackColor = Color.Transparent
+        LinkLabel5.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
+        LinkLabel5.ForeColor = Color.Red
+        LinkLabel5.LinkBehavior = LinkBehavior.NeverUnderline
+        LinkLabel5.LinkColor = Color.PaleGreen
+        LinkLabel5.Location = New Point(1199, 39)
+        LinkLabel5.Name = "LinkLabel5"
+        LinkLabel5.Size = New Size(73, 21)
+        LinkLabel5.TabIndex = 14
+        LinkLabel5.TabStop = True
+        LinkLabel5.Text = "LOGOUT"
+        ' 
         ' LinkLabel4
         ' 
         LinkLabel4.AutoSize = True
@@ -65,7 +82,7 @@ Partial Class dashboard
         LinkLabel4.ForeColor = SystemColors.Control
         LinkLabel4.LinkBehavior = LinkBehavior.NeverUnderline
         LinkLabel4.LinkColor = Color.White
-        LinkLabel4.Location = New Point(1153, 39)
+        LinkLabel4.Location = New Point(789, 39)
         LinkLabel4.Name = "LinkLabel4"
         LinkLabel4.Size = New Size(103, 21)
         LinkLabel4.TabIndex = 11
@@ -80,7 +97,7 @@ Partial Class dashboard
         LinkLabel3.ForeColor = SystemColors.Control
         LinkLabel3.LinkBehavior = LinkBehavior.NeverUnderline
         LinkLabel3.LinkColor = Color.White
-        LinkLabel3.Location = New Point(1014, 39)
+        LinkLabel3.Location = New Point(650, 39)
         LinkLabel3.Name = "LinkLabel3"
         LinkLabel3.Size = New Size(102, 21)
         LinkLabel3.TabIndex = 10
@@ -95,7 +112,7 @@ Partial Class dashboard
         LinkLabel2.ForeColor = SystemColors.Control
         LinkLabel2.LinkBehavior = LinkBehavior.NeverUnderline
         LinkLabel2.LinkColor = Color.White
-        LinkLabel2.Location = New Point(909, 39)
+        LinkLabel2.Location = New Point(545, 39)
         LinkLabel2.Name = "LinkLabel2"
         LinkLabel2.Size = New Size(60, 21)
         LinkLabel2.TabIndex = 9
@@ -110,7 +127,7 @@ Partial Class dashboard
         LinkLabel1.ForeColor = SystemColors.Control
         LinkLabel1.LinkBehavior = LinkBehavior.NeverUnderline
         LinkLabel1.LinkColor = Color.White
-        LinkLabel1.Location = New Point(805, 38)
+        LinkLabel1.Location = New Point(441, 38)
         LinkLabel1.Name = "LinkLabel1"
         LinkLabel1.Size = New Size(57, 21)
         LinkLabel1.TabIndex = 8
@@ -174,7 +191,7 @@ Partial Class dashboard
         ' 
         Label8.AutoSize = True
         Label8.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label8.Location = New Point(781, 138)
+        Label8.Location = New Point(763, 138)
         Label8.Name = "Label8"
         Label8.Size = New Size(99, 15)
         Label8.TabIndex = 7
@@ -184,7 +201,7 @@ Partial Class dashboard
         ' 
         Label9.AutoSize = True
         Label9.Font = New Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label9.Location = New Point(810, 77)
+        Label9.Location = New Point(792, 77)
         Label9.Name = "Label9"
         Label9.Size = New Size(37, 45)
         Label9.TabIndex = 6
@@ -194,7 +211,7 @@ Partial Class dashboard
         ' 
         Label6.AutoSize = True
         Label6.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label6.Location = New Point(413, 138)
+        Label6.Location = New Point(461, 138)
         Label6.Name = "Label6"
         Label6.Size = New Size(51, 15)
         Label6.TabIndex = 5
@@ -204,7 +221,7 @@ Partial Class dashboard
         ' 
         Label7.AutoSize = True
         Label7.Font = New Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label7.Location = New Point(422, 77)
+        Label7.Location = New Point(470, 77)
         Label7.Name = "Label7"
         Label7.Size = New Size(37, 45)
         Label7.TabIndex = 4
@@ -253,6 +270,8 @@ Partial Class dashboard
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
+        BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
+        BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(1284, 661)
         Controls.Add(Panel2)
         Controls.Add(Panel1)
@@ -283,4 +302,5 @@ Partial Class dashboard
     Friend WithEvents LinkLabel1 As LinkLabel
     Friend WithEvents LinkLabel3 As LinkLabel
     Friend WithEvents LinkLabel4 As LinkLabel
+    Friend WithEvents LinkLabel5 As LinkLabel
 End Class

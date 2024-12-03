@@ -24,6 +24,7 @@ Partial Class myProducts
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(myProducts))
         Panel1 = New Panel()
+        LinkLabel5 = New LinkLabel()
         LinkLabel4 = New LinkLabel()
         LinkLabel3 = New LinkLabel()
         LinkLabel2 = New LinkLabel()
@@ -53,6 +54,7 @@ Partial Class myProducts
         ' Panel1
         ' 
         Panel1.BackColor = Color.ForestGreen
+        Panel1.Controls.Add(LinkLabel5)
         Panel1.Controls.Add(LinkLabel4)
         Panel1.Controls.Add(LinkLabel3)
         Panel1.Controls.Add(LinkLabel2)
@@ -63,6 +65,21 @@ Partial Class myProducts
         Panel1.Size = New Size(1286, 100)
         Panel1.TabIndex = 7
         ' 
+        ' LinkLabel5
+        ' 
+        LinkLabel5.AutoSize = True
+        LinkLabel5.BackColor = Color.Transparent
+        LinkLabel5.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
+        LinkLabel5.ForeColor = Color.Red
+        LinkLabel5.LinkBehavior = LinkBehavior.NeverUnderline
+        LinkLabel5.LinkColor = Color.PaleGreen
+        LinkLabel5.Location = New Point(1183, 38)
+        LinkLabel5.Name = "LinkLabel5"
+        LinkLabel5.Size = New Size(73, 21)
+        LinkLabel5.TabIndex = 12
+        LinkLabel5.TabStop = True
+        LinkLabel5.Text = "LOGOUT"
+        ' 
         ' LinkLabel4
         ' 
         LinkLabel4.AutoSize = True
@@ -71,7 +88,7 @@ Partial Class myProducts
         LinkLabel4.ForeColor = SystemColors.Control
         LinkLabel4.LinkBehavior = LinkBehavior.NeverUnderline
         LinkLabel4.LinkColor = Color.White
-        LinkLabel4.Location = New Point(1153, 39)
+        LinkLabel4.Location = New Point(784, 39)
         LinkLabel4.Name = "LinkLabel4"
         LinkLabel4.Size = New Size(103, 21)
         LinkLabel4.TabIndex = 11
@@ -86,7 +103,7 @@ Partial Class myProducts
         LinkLabel3.ForeColor = SystemColors.Control
         LinkLabel3.LinkBehavior = LinkBehavior.NeverUnderline
         LinkLabel3.LinkColor = Color.White
-        LinkLabel3.Location = New Point(1014, 39)
+        LinkLabel3.Location = New Point(645, 39)
         LinkLabel3.Name = "LinkLabel3"
         LinkLabel3.Size = New Size(109, 21)
         LinkLabel3.TabIndex = 10
@@ -101,7 +118,7 @@ Partial Class myProducts
         LinkLabel2.ForeColor = SystemColors.Control
         LinkLabel2.LinkBehavior = LinkBehavior.NeverUnderline
         LinkLabel2.LinkColor = Color.White
-        LinkLabel2.Location = New Point(909, 39)
+        LinkLabel2.Location = New Point(540, 39)
         LinkLabel2.Name = "LinkLabel2"
         LinkLabel2.Size = New Size(60, 21)
         LinkLabel2.TabIndex = 9
@@ -116,7 +133,7 @@ Partial Class myProducts
         LinkLabel1.ForeColor = SystemColors.Control
         LinkLabel1.LinkBehavior = LinkBehavior.NeverUnderline
         LinkLabel1.LinkColor = Color.White
-        LinkLabel1.Location = New Point(805, 38)
+        LinkLabel1.Location = New Point(436, 38)
         LinkLabel1.Name = "LinkLabel1"
         LinkLabel1.Size = New Size(55, 21)
         LinkLabel1.TabIndex = 8
@@ -238,6 +255,7 @@ Partial Class myProducts
         ' Label6
         ' 
         Label6.AutoSize = True
+        Label6.BackColor = Color.Transparent
         Label6.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label6.Location = New Point(82, 124)
         Label6.Name = "Label6"
@@ -248,6 +266,7 @@ Partial Class myProducts
         ' Label7
         ' 
         Label7.AutoSize = True
+        Label7.BackColor = Color.Transparent
         Label7.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label7.Location = New Point(296, 124)
         Label7.Name = "Label7"
@@ -258,6 +277,7 @@ Partial Class myProducts
         ' Label8
         ' 
         Label8.AutoSize = True
+        Label8.BackColor = Color.Transparent
         Label8.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label8.Location = New Point(471, 124)
         Label8.Name = "Label8"
@@ -268,6 +288,7 @@ Partial Class myProducts
         ' Label9
         ' 
         Label9.AutoSize = True
+        Label9.BackColor = Color.Transparent
         Label9.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label9.Location = New Point(720, 124)
         Label9.Name = "Label9"
@@ -278,6 +299,7 @@ Partial Class myProducts
         ' Label10
         ' 
         Label10.AutoSize = True
+        Label10.BackColor = Color.Transparent
         Label10.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label10.Location = New Point(928, 124)
         Label10.Name = "Label10"
@@ -288,6 +310,7 @@ Partial Class myProducts
         ' Label11
         ' 
         Label11.AutoSize = True
+        Label11.BackColor = Color.Transparent
         Label11.Font = New Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label11.Location = New Point(1106, 124)
         Label11.Name = "Label11"
@@ -299,6 +322,8 @@ Partial Class myProducts
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
+        BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
+        BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(1284, 661)
         Controls.Add(Label11)
         Controls.Add(Label10)
@@ -342,4 +367,5 @@ Partial Class myProducts
     Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents Label11 As Label
+    Friend WithEvents LinkLabel5 As LinkLabel
 End Class

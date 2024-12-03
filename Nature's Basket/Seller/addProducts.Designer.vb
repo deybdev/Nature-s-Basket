@@ -45,6 +45,7 @@ Partial Class addProducts
         Label3 = New Label()
         OpenFileDialog1 = New OpenFileDialog()
         Panel1 = New Panel()
+        LinkLabel5 = New LinkLabel()
         LinkLabel4 = New LinkLabel()
         LinkLabel3 = New LinkLabel()
         LinkLabel2 = New LinkLabel()
@@ -59,6 +60,7 @@ Partial Class addProducts
         ' 
         ' Panel2
         ' 
+        Panel2.BackColor = Color.Transparent
         Panel2.BorderStyle = BorderStyle.FixedSingle
         Panel2.Controls.Add(Panel3)
         Panel2.Location = New Point(12, 121)
@@ -98,7 +100,7 @@ Partial Class addProducts
         Button4.Cursor = Cursors.Hand
         Button4.FlatStyle = FlatStyle.Flat
         Button4.ForeColor = SystemColors.ButtonHighlight
-        Button4.Location = New Point(1024, 185)
+        Button4.Location = New Point(1011, 158)
         Button4.Name = "Button4"
         Button4.Size = New Size(109, 70)
         Button4.TabIndex = 5
@@ -108,19 +110,19 @@ Partial Class addProducts
         ' quantityBox
         ' 
         quantityBox.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        quantityBox.Location = New Point(641, 334)
+        quantityBox.Location = New Point(658, 296)
         quantityBox.Maximum = New Decimal(New Integer() {100000000, 0, 0, 0})
         quantityBox.Name = "quantityBox"
-        quantityBox.Size = New Size(120, 27)
+        quantityBox.Size = New Size(233, 27)
         quantityBox.TabIndex = 20
         ' 
         ' Label12
         ' 
         Label12.AutoSize = True
-        Label12.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label12.Location = New Point(548, 338)
+        Label12.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold)
+        Label12.Location = New Point(565, 300)
         Label12.Name = "Label12"
-        Label12.Size = New Size(67, 17)
+        Label12.Size = New Size(72, 17)
         Label12.TabIndex = 19
         Label12.Text = "Quantity : "
         ' 
@@ -131,7 +133,7 @@ Partial Class addProducts
         unitBox.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         unitBox.FormattingEnabled = True
         unitBox.Items.AddRange(New Object() {"g", "kg", "liter", "lb", "mg", "ml", "oz", "pc"})
-        unitBox.Location = New Point(772, 280)
+        unitBox.Location = New Point(809, 241)
         unitBox.Name = "unitBox"
         unitBox.Size = New Size(82, 28)
         unitBox.TabIndex = 18
@@ -139,8 +141,8 @@ Partial Class addProducts
         ' Label11
         ' 
         Label11.AutoSize = True
-        Label11.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label11.Location = New Point(735, 285)
+        Label11.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold)
+        Label11.Location = New Point(768, 247)
         Label11.Name = "Label11"
         Label11.Size = New Size(28, 17)
         Label11.TabIndex = 17
@@ -149,36 +151,36 @@ Partial Class addProducts
         ' priceBox
         ' 
         priceBox.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        priceBox.Location = New Point(640, 280)
+        priceBox.Location = New Point(657, 242)
         priceBox.Name = "priceBox"
-        priceBox.Size = New Size(89, 27)
+        priceBox.Size = New Size(105, 27)
         priceBox.TabIndex = 16
         ' 
         ' supplierBox
         ' 
         supplierBox.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        supplierBox.Location = New Point(640, 228)
+        supplierBox.Location = New Point(657, 190)
         supplierBox.Name = "supplierBox"
-        supplierBox.Size = New Size(214, 27)
+        supplierBox.Size = New Size(234, 27)
         supplierBox.TabIndex = 15
         ' 
         ' Label10
         ' 
         Label10.AutoSize = True
-        Label10.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label10.Location = New Point(567, 289)
+        Label10.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold)
+        Label10.Location = New Point(584, 251)
         Label10.Name = "Label10"
-        Label10.Size = New Size(43, 17)
+        Label10.Size = New Size(44, 17)
         Label10.TabIndex = 14
         Label10.Text = "Price :"
         ' 
         ' Label9
         ' 
         Label9.AutoSize = True
-        Label9.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label9.Location = New Point(549, 233)
+        Label9.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold)
+        Label9.Location = New Point(566, 195)
         Label9.Name = "Label9"
-        Label9.Size = New Size(67, 17)
+        Label9.Size = New Size(68, 17)
         Label9.TabIndex = 13
         Label9.Text = "Supplier : "
         ' 
@@ -186,7 +188,7 @@ Partial Class addProducts
         ' 
         PictureBox1.BackgroundImageLayout = ImageLayout.None
         PictureBox1.BorderStyle = BorderStyle.FixedSingle
-        PictureBox1.Location = New Point(259, 132)
+        PictureBox1.Location = New Point(259, 124)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(175, 140)
         PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
@@ -200,7 +202,7 @@ Partial Class addProducts
         productCategory.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         productCategory.FormattingEnabled = True
         productCategory.Items.AddRange(New Object() {"Vegetable", "Fruit", "Egg", "Meat", "Herb", "Seafood"})
-        productCategory.Location = New Point(640, 179)
+        productCategory.Location = New Point(657, 141)
         productCategory.Name = "productCategory"
         productCategory.Size = New Size(234, 28)
         productCategory.TabIndex = 11
@@ -212,7 +214,7 @@ Partial Class addProducts
         addImageBtn.FlatAppearance.BorderSize = 0
         addImageBtn.FlatStyle = FlatStyle.Flat
         addImageBtn.ForeColor = SystemColors.ButtonHighlight
-        addImageBtn.Location = New Point(259, 278)
+        addImageBtn.Location = New Point(259, 270)
         addImageBtn.Name = "addImageBtn"
         addImageBtn.Size = New Size(175, 29)
         addImageBtn.TabIndex = 10
@@ -222,27 +224,27 @@ Partial Class addProducts
         ' Label7
         ' 
         Label7.AutoSize = True
-        Label7.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label7.Location = New Point(499, 181)
+        Label7.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold)
+        Label7.Location = New Point(516, 143)
         Label7.Name = "Label7"
-        Label7.Size = New Size(121, 17)
+        Label7.Size = New Size(127, 17)
         Label7.TabIndex = 7
         Label7.Text = "Product Category : "
         ' 
         ' Label6
         ' 
         Label6.AutoSize = True
-        Label6.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label6.Location = New Point(514, 132)
+        Label6.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold)
+        Label6.Location = New Point(531, 94)
         Label6.Name = "Label6"
-        Label6.Size = New Size(103, 17)
+        Label6.Size = New Size(107, 17)
         Label6.TabIndex = 5
         Label6.Text = "Product Name : "
         ' 
         ' productName
         ' 
         productName.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        productName.Location = New Point(640, 128)
+        productName.Location = New Point(657, 90)
         productName.Name = "productName"
         productName.Size = New Size(234, 27)
         productName.TabIndex = 4
@@ -250,10 +252,10 @@ Partial Class addProducts
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label5.Location = New Point(95, 208)
+        Label5.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold)
+        Label5.Location = New Point(95, 200)
         Label5.Name = "Label5"
-        Label5.Size = New Size(100, 17)
+        Label5.Size = New Size(105, 17)
         Label5.TabIndex = 2
         Label5.Text = "Product Image: "
         ' 
@@ -284,6 +286,7 @@ Partial Class addProducts
         ' Panel1
         ' 
         Panel1.BackColor = Color.ForestGreen
+        Panel1.Controls.Add(LinkLabel5)
         Panel1.Controls.Add(LinkLabel4)
         Panel1.Controls.Add(LinkLabel3)
         Panel1.Controls.Add(LinkLabel2)
@@ -294,6 +297,21 @@ Partial Class addProducts
         Panel1.Size = New Size(1286, 100)
         Panel1.TabIndex = 8
         ' 
+        ' LinkLabel5
+        ' 
+        LinkLabel5.AutoSize = True
+        LinkLabel5.BackColor = Color.Transparent
+        LinkLabel5.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
+        LinkLabel5.ForeColor = Color.Red
+        LinkLabel5.LinkBehavior = LinkBehavior.NeverUnderline
+        LinkLabel5.LinkColor = Color.PaleGreen
+        LinkLabel5.Location = New Point(1191, 36)
+        LinkLabel5.Name = "LinkLabel5"
+        LinkLabel5.Size = New Size(73, 21)
+        LinkLabel5.TabIndex = 13
+        LinkLabel5.TabStop = True
+        LinkLabel5.Text = "LOGOUT"
+        ' 
         ' LinkLabel4
         ' 
         LinkLabel4.AutoSize = True
@@ -302,7 +320,7 @@ Partial Class addProducts
         LinkLabel4.ForeColor = SystemColors.Control
         LinkLabel4.LinkBehavior = LinkBehavior.NeverUnderline
         LinkLabel4.LinkColor = Color.White
-        LinkLabel4.Location = New Point(1153, 39)
+        LinkLabel4.Location = New Point(786, 39)
         LinkLabel4.Name = "LinkLabel4"
         LinkLabel4.Size = New Size(108, 21)
         LinkLabel4.TabIndex = 11
@@ -317,7 +335,7 @@ Partial Class addProducts
         LinkLabel3.ForeColor = SystemColors.Control
         LinkLabel3.LinkBehavior = LinkBehavior.NeverUnderline
         LinkLabel3.LinkColor = Color.White
-        LinkLabel3.Location = New Point(1014, 39)
+        LinkLabel3.Location = New Point(647, 39)
         LinkLabel3.Name = "LinkLabel3"
         LinkLabel3.Size = New Size(102, 21)
         LinkLabel3.TabIndex = 10
@@ -332,7 +350,7 @@ Partial Class addProducts
         LinkLabel2.ForeColor = SystemColors.Control
         LinkLabel2.LinkBehavior = LinkBehavior.NeverUnderline
         LinkLabel2.LinkColor = Color.White
-        LinkLabel2.Location = New Point(909, 39)
+        LinkLabel2.Location = New Point(542, 39)
         LinkLabel2.Name = "LinkLabel2"
         LinkLabel2.Size = New Size(60, 21)
         LinkLabel2.TabIndex = 9
@@ -347,7 +365,7 @@ Partial Class addProducts
         LinkLabel1.ForeColor = SystemColors.Control
         LinkLabel1.LinkBehavior = LinkBehavior.NeverUnderline
         LinkLabel1.LinkColor = Color.White
-        LinkLabel1.Location = New Point(805, 38)
+        LinkLabel1.Location = New Point(438, 38)
         LinkLabel1.Name = "LinkLabel1"
         LinkLabel1.Size = New Size(55, 21)
         LinkLabel1.TabIndex = 8
@@ -373,6 +391,8 @@ Partial Class addProducts
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
+        BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
+        BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(1284, 661)
         Controls.Add(Panel1)
         Controls.Add(Panel2)
@@ -416,4 +436,5 @@ Partial Class addProducts
     Friend WithEvents LinkLabel2 As LinkLabel
     Friend WithEvents LinkLabel1 As LinkLabel
     Friend WithEvents Label2 As Label
+    Friend WithEvents LinkLabel5 As LinkLabel
 End Class

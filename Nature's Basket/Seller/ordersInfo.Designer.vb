@@ -24,6 +24,7 @@ Partial Class ordersInfo
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ordersInfo))
         Panel1 = New Panel()
+        LinkLabel5 = New LinkLabel()
         LinkLabel4 = New LinkLabel()
         LinkLabel3 = New LinkLabel()
         LinkLabel2 = New LinkLabel()
@@ -58,6 +59,7 @@ Partial Class ordersInfo
         ' Panel1
         ' 
         Panel1.BackColor = Color.ForestGreen
+        Panel1.Controls.Add(LinkLabel5)
         Panel1.Controls.Add(LinkLabel4)
         Panel1.Controls.Add(LinkLabel3)
         Panel1.Controls.Add(LinkLabel2)
@@ -68,6 +70,21 @@ Partial Class ordersInfo
         Panel1.Size = New Size(1286, 100)
         Panel1.TabIndex = 8
         ' 
+        ' LinkLabel5
+        ' 
+        LinkLabel5.AutoSize = True
+        LinkLabel5.BackColor = Color.Transparent
+        LinkLabel5.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
+        LinkLabel5.ForeColor = Color.Red
+        LinkLabel5.LinkBehavior = LinkBehavior.NeverUnderline
+        LinkLabel5.LinkColor = Color.PaleGreen
+        LinkLabel5.Location = New Point(1192, 39)
+        LinkLabel5.Name = "LinkLabel5"
+        LinkLabel5.Size = New Size(73, 21)
+        LinkLabel5.TabIndex = 14
+        LinkLabel5.TabStop = True
+        LinkLabel5.Text = "LOGOUT"
+        ' 
         ' LinkLabel4
         ' 
         LinkLabel4.AutoSize = True
@@ -76,7 +93,7 @@ Partial Class ordersInfo
         LinkLabel4.ForeColor = SystemColors.Control
         LinkLabel4.LinkBehavior = LinkBehavior.NeverUnderline
         LinkLabel4.LinkColor = Color.White
-        LinkLabel4.Location = New Point(1153, 39)
+        LinkLabel4.Location = New Point(785, 39)
         LinkLabel4.Name = "LinkLabel4"
         LinkLabel4.Size = New Size(103, 21)
         LinkLabel4.TabIndex = 11
@@ -91,7 +108,7 @@ Partial Class ordersInfo
         LinkLabel3.ForeColor = SystemColors.Control
         LinkLabel3.LinkBehavior = LinkBehavior.NeverUnderline
         LinkLabel3.LinkColor = Color.White
-        LinkLabel3.Location = New Point(1014, 39)
+        LinkLabel3.Location = New Point(646, 39)
         LinkLabel3.Name = "LinkLabel3"
         LinkLabel3.Size = New Size(102, 21)
         LinkLabel3.TabIndex = 10
@@ -106,7 +123,7 @@ Partial Class ordersInfo
         LinkLabel2.ForeColor = SystemColors.Control
         LinkLabel2.LinkBehavior = LinkBehavior.NeverUnderline
         LinkLabel2.LinkColor = Color.White
-        LinkLabel2.Location = New Point(909, 39)
+        LinkLabel2.Location = New Point(541, 39)
         LinkLabel2.Name = "LinkLabel2"
         LinkLabel2.Size = New Size(63, 21)
         LinkLabel2.TabIndex = 9
@@ -121,7 +138,7 @@ Partial Class ordersInfo
         LinkLabel1.ForeColor = SystemColors.Control
         LinkLabel1.LinkBehavior = LinkBehavior.NeverUnderline
         LinkLabel1.LinkColor = Color.White
-        LinkLabel1.Location = New Point(805, 38)
+        LinkLabel1.Location = New Point(437, 38)
         LinkLabel1.Name = "LinkLabel1"
         LinkLabel1.Size = New Size(55, 21)
         LinkLabel1.TabIndex = 8
@@ -155,6 +172,7 @@ Partial Class ordersInfo
         ' 
         ' Panel2
         ' 
+        Panel2.BackColor = SystemColors.ButtonFace
         Panel2.Controls.Add(Label5)
         Panel2.Controls.Add(Label4)
         Panel2.Controls.Add(Label3)
@@ -213,6 +231,7 @@ Partial Class ordersInfo
         ' 
         ' Panel3
         ' 
+        Panel3.BackColor = SystemColors.ButtonFace
         Panel3.Controls.Add(Label16)
         Panel3.Controls.Add(Label15)
         Panel3.Controls.Add(Label14)
@@ -343,6 +362,8 @@ Partial Class ordersInfo
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
+        BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
+        BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(1284, 661)
         Controls.Add(FlowLayoutPanel1)
         Controls.Add(Panel1)
@@ -385,4 +406,5 @@ Partial Class ordersInfo
     Friend WithEvents Label14 As Label
     Friend WithEvents Label13 As Label
     Friend WithEvents Label11 As Label
+    Friend WithEvents LinkLabel5 As LinkLabel
 End Class

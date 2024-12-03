@@ -24,6 +24,7 @@ Partial Class orders
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(orders))
         Panel1 = New Panel()
+        LinkLabel5 = New LinkLabel()
         LinkLabel4 = New LinkLabel()
         LinkLabel3 = New LinkLabel()
         LinkLabel2 = New LinkLabel()
@@ -50,6 +51,7 @@ Partial Class orders
         ' Panel1
         ' 
         Panel1.BackColor = Color.ForestGreen
+        Panel1.Controls.Add(LinkLabel5)
         Panel1.Controls.Add(LinkLabel4)
         Panel1.Controls.Add(LinkLabel3)
         Panel1.Controls.Add(LinkLabel2)
@@ -60,6 +62,21 @@ Partial Class orders
         Panel1.Size = New Size(1286, 100)
         Panel1.TabIndex = 7
         ' 
+        ' LinkLabel5
+        ' 
+        LinkLabel5.AutoSize = True
+        LinkLabel5.BackColor = Color.Transparent
+        LinkLabel5.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
+        LinkLabel5.ForeColor = Color.Red
+        LinkLabel5.LinkBehavior = LinkBehavior.NeverUnderline
+        LinkLabel5.LinkColor = Color.PaleGreen
+        LinkLabel5.Location = New Point(1198, 40)
+        LinkLabel5.Name = "LinkLabel5"
+        LinkLabel5.Size = New Size(73, 21)
+        LinkLabel5.TabIndex = 13
+        LinkLabel5.TabStop = True
+        LinkLabel5.Text = "LOGOUT"
+        ' 
         ' LinkLabel4
         ' 
         LinkLabel4.AutoSize = True
@@ -68,7 +85,7 @@ Partial Class orders
         LinkLabel4.ForeColor = SystemColors.Control
         LinkLabel4.LinkBehavior = LinkBehavior.NeverUnderline
         LinkLabel4.LinkColor = Color.White
-        LinkLabel4.Location = New Point(1153, 39)
+        LinkLabel4.Location = New Point(784, 39)
         LinkLabel4.Name = "LinkLabel4"
         LinkLabel4.Size = New Size(103, 21)
         LinkLabel4.TabIndex = 11
@@ -83,7 +100,7 @@ Partial Class orders
         LinkLabel3.ForeColor = SystemColors.Control
         LinkLabel3.LinkBehavior = LinkBehavior.NeverUnderline
         LinkLabel3.LinkColor = Color.White
-        LinkLabel3.Location = New Point(1014, 39)
+        LinkLabel3.Location = New Point(645, 39)
         LinkLabel3.Name = "LinkLabel3"
         LinkLabel3.Size = New Size(102, 21)
         LinkLabel3.TabIndex = 10
@@ -98,7 +115,7 @@ Partial Class orders
         LinkLabel2.ForeColor = SystemColors.Control
         LinkLabel2.LinkBehavior = LinkBehavior.NeverUnderline
         LinkLabel2.LinkColor = Color.White
-        LinkLabel2.Location = New Point(909, 39)
+        LinkLabel2.Location = New Point(540, 39)
         LinkLabel2.Name = "LinkLabel2"
         LinkLabel2.Size = New Size(63, 21)
         LinkLabel2.TabIndex = 9
@@ -113,7 +130,7 @@ Partial Class orders
         LinkLabel1.ForeColor = SystemColors.Control
         LinkLabel1.LinkBehavior = LinkBehavior.NeverUnderline
         LinkLabel1.LinkColor = Color.White
-        LinkLabel1.Location = New Point(805, 38)
+        LinkLabel1.Location = New Point(436, 38)
         LinkLabel1.Name = "LinkLabel1"
         LinkLabel1.Size = New Size(55, 21)
         LinkLabel1.TabIndex = 8
@@ -138,6 +155,7 @@ Partial Class orders
         ' FlowLayoutPanel1
         ' 
         FlowLayoutPanel1.AutoScroll = True
+        FlowLayoutPanel1.BackColor = Color.Transparent
         FlowLayoutPanel1.Controls.Add(Panel2)
         FlowLayoutPanel1.Location = New Point(12, 113)
         FlowLayoutPanel1.Name = "FlowLayoutPanel1"
@@ -146,6 +164,7 @@ Partial Class orders
         ' 
         ' Panel2
         ' 
+        Panel2.BackColor = Color.White
         Panel2.Controls.Add(ComboBox1)
         Panel2.Controls.Add(Label11)
         Panel2.Controls.Add(Label10)
@@ -277,6 +296,8 @@ Partial Class orders
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
+        BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
+        BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(1284, 661)
         Controls.Add(FlowLayoutPanel1)
         Controls.Add(Panel1)
@@ -310,4 +331,5 @@ Partial Class orders
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents LinkLabel5 As LinkLabel
 End Class

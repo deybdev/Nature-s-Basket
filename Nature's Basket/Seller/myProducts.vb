@@ -199,8 +199,8 @@ Public Class myProducts
 
     ' Navigation methods (reused from previous code)
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
-        dashboard.Show()
-        Me.Hide()
+        dashboard.Show
+        Hide
     End Sub
 
     Private Sub LinkLabel2_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel2.LinkClicked
@@ -209,8 +209,12 @@ Public Class myProducts
     End Sub
 
     Private Sub LinkLabel4_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel4.LinkClicked
-        addProducts.Show()
-        Me.Hide()
+        addProducts.Show
+        Hide
     End Sub
 
+    Private Sub LinkLabel5_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel5.LinkClicked
+        login.Show()
+        Me.Show()
+    End Sub
 End Class

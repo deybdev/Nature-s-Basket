@@ -162,8 +162,9 @@ Partial Class displaySearch
         ' Label1
         ' 
         Label1.AutoSize = True
+        Label1.BackColor = Color.Transparent
         Label1.Font = New Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(42, 129)
+        Label1.Location = New Point(148, 147)
         Label1.Name = "Label1"
         Label1.Size = New Size(209, 37)
         Label1.TabIndex = 4
@@ -172,6 +173,7 @@ Partial Class displaySearch
         ' FlowLayoutPanel1
         ' 
         FlowLayoutPanel1.AutoScroll = True
+        FlowLayoutPanel1.BackColor = Color.Transparent
         FlowLayoutPanel1.Location = New Point(0, 232)
         FlowLayoutPanel1.Name = "FlowLayoutPanel1"
         FlowLayoutPanel1.Size = New Size(1286, 430)
@@ -180,8 +182,9 @@ Partial Class displaySearch
         ' Label5
         ' 
         Label5.AutoSize = True
+        Label5.BackColor = Color.Transparent
         Label5.Font = New Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label5.Location = New Point(257, 135)
+        Label5.Location = New Point(363, 153)
         Label5.Name = "Label5"
         Label5.Size = New Size(57, 30)
         Label5.TabIndex = 6
@@ -329,6 +332,8 @@ Partial Class displaySearch
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
+        BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
+        BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(1284, 661)
         Controls.Add(menuPanel)
         Controls.Add(Label5)

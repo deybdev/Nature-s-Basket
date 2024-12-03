@@ -172,6 +172,8 @@ Partial Class cart
         ' Panel2
         ' 
         Panel2.BackColor = Color.White
+        Panel2.BackgroundImage = CType(resources.GetObject("Panel2.BackgroundImage"), Image)
+        Panel2.BackgroundImageLayout = ImageLayout.Stretch
         Panel2.Controls.Add(menuPanel)
         Panel2.Controls.Add(FlowLayoutPanel1)
         Panel2.Controls.Add(Label37)
@@ -498,9 +500,10 @@ Partial Class cart
         ' Label37
         ' 
         Label37.AutoSize = True
+        Label37.BackColor = Color.Transparent
         Label37.Font = New Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label37.ForeColor = Color.DarkGreen
-        Label37.Location = New Point(573, 14)
+        Label37.Location = New Point(587, 15)
         Label37.Name = "Label37"
         Label37.Size = New Size(106, 30)
         Label37.TabIndex = 23

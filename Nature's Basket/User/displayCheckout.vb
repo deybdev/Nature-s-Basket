@@ -184,6 +184,14 @@ Public Class displayOrdervb
                         cmd.Parameters.AddWithValue("@product_id", item("product_id"))
                         cmd.ExecuteNonQuery()
                     End Using
+
+                    ' Update the product stock quantity in the products table
+                    Dim orderedQuantity As Integer = Convert.ToInt32(item("quantity"))
+                    Using cmd As New MySqlCommand("UPDATE products SET quantity = quantity - @ordered_quantity WHERE id = @product_id", connection, transaction)
+                        cmd.Parameters.AddWithValue("@ordered_quantity", orderedQuantity)
+                        cmd.Parameters.AddWithValue("@product_id", item("product_id"))
+                        cmd.ExecuteNonQuery()
+                    End Using
                 Next
 
                 ' Commit the transaction

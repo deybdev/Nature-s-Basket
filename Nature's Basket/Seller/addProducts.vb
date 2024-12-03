@@ -82,4 +82,9 @@ Public Class addProducts
         myProducts.Show()
         Me.Hide()
     End Sub
+
+    Private Sub LinkLabel5_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel5.LinkClicked
+        login.Show()
+        Me.Hide()
+    End Sub
 End Class

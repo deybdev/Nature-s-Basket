@@ -169,7 +169,7 @@ Partial Class displayOrdervb
         ' 
         ' Panel2
         ' 
-        Panel2.BackColor = Color.Transparent
+        Panel2.BackColor = Color.White
         Panel2.BorderStyle = BorderStyle.FixedSingle
         Panel2.Controls.Add(Label10)
         Panel2.Controls.Add(contactTxt)
@@ -550,6 +550,8 @@ Partial Class displayOrdervb
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
+        BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
+        BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(1284, 661)
         Controls.Add(menuPanel)
         Controls.Add(FlowLayoutPanel1)

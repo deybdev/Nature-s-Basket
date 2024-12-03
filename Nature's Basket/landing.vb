@@ -3,6 +3,10 @@
 
     Public Sub New()
         Me.New(login.isLoggedIn)
+
+        Panel1.BackColor = Color.FromArgb(150, Color.Black)
+
+
     End Sub
 
     Public Sub New(ByVal isLoggedIn As Boolean)
@@ -127,6 +131,10 @@
             ' Prevent the beep sound on Enter key press
             e.SuppressKeyPress = True
         End If
+    End Sub
+
+    Private Sub landing_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 
 

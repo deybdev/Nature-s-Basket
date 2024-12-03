@@ -359,6 +359,7 @@ Partial Class displayProducts
         ' FlowLayoutPanel1
         ' 
         FlowLayoutPanel1.AutoScroll = True
+        FlowLayoutPanel1.BackColor = Color.Transparent
         FlowLayoutPanel1.Controls.Add(productCard)
         FlowLayoutPanel1.Location = New Point(0, 234)
         FlowLayoutPanel1.Name = "FlowLayoutPanel1"
@@ -507,6 +508,8 @@ Partial Class displayProducts
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
+        BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
+        BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(1284, 661)
         Controls.Add(menuPanel)
         Controls.Add(FlowLayoutPanel1)

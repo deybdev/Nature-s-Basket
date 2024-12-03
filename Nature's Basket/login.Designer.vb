@@ -82,6 +82,8 @@ Partial Class login
         ' Panel2
         ' 
         Panel2.BackColor = Color.LightGreen
+        Panel2.BackgroundImage = CType(resources.GetObject("Panel2.BackgroundImage"), Image)
+        Panel2.BackgroundImageLayout = ImageLayout.Stretch
         Panel2.Controls.Add(Panel3)
         Panel2.Location = New Point(1, 97)
         Panel2.Name = "Panel2"

@@ -52,7 +52,9 @@ Partial Class landing
         vegetablesLink = New LinkLabel()
         Label5 = New Label()
         Label6 = New Label()
+        Panel1 = New Panel()
         menuPanel.SuspendLayout()
+        Panel1.SuspendLayout()
         SuspendLayout()
         ' 
         ' Label1
@@ -61,7 +63,7 @@ Partial Class landing
         Label1.BackColor = Color.Transparent
         Label1.Font = New Font("Segoe UI", 72F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = SystemColors.Control
-        Label1.Location = New Point(275, 274)
+        Label1.Location = New Point(272, 273)
         Label1.Name = "Label1"
         Label1.Size = New Size(749, 128)
         Label1.TabIndex = 0
@@ -76,7 +78,7 @@ Partial Class landing
         LinkLabel3.ForeColor = SystemColors.Control
         LinkLabel3.LinkBehavior = LinkBehavior.NeverUnderline
         LinkLabel3.LinkColor = Color.White
-        LinkLabel3.Location = New Point(775, 33)
+        LinkLabel3.Location = New Point(765, 34)
         LinkLabel3.Name = "LinkLabel3"
         LinkLabel3.Size = New Size(51, 21)
         LinkLabel3.TabIndex = 3
@@ -86,7 +88,7 @@ Partial Class landing
         ' searchBox
         ' 
         searchBox.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        searchBox.Location = New Point(988, 33)
+        searchBox.Location = New Point(990, 31)
         searchBox.Name = "searchBox"
         searchBox.Size = New Size(167, 25)
         searchBox.TabIndex = 4
@@ -99,7 +101,7 @@ Partial Class landing
         Button1.FlatStyle = FlatStyle.Flat
         Button1.ForeColor = Color.Transparent
         Button1.Image = CType(resources.GetObject("Button1.Image"), Image)
-        Button1.Location = New Point(958, 33)
+        Button1.Location = New Point(958, 35)
         Button1.Name = "Button1"
         Button1.Size = New Size(24, 25)
         Button1.TabIndex = 5
@@ -113,7 +115,7 @@ Partial Class landing
         Button2.FlatStyle = FlatStyle.Flat
         Button2.ForeColor = Color.Transparent
         Button2.Image = CType(resources.GetObject("Button2.Image"), Image)
-        Button2.Location = New Point(1176, 32)
+        Button2.Location = New Point(1173, 32)
         Button2.Name = "Button2"
         Button2.Size = New Size(24, 25)
         Button2.TabIndex = 6
@@ -127,7 +129,7 @@ Partial Class landing
         menu.FlatStyle = FlatStyle.Flat
         menu.ForeColor = Color.Transparent
         menu.Image = CType(resources.GetObject("menu.Image"), Image)
-        menu.Location = New Point(1215, 32)
+        menu.Location = New Point(1222, 33)
         menu.Name = "menu"
         menu.Size = New Size(24, 25)
         menu.TabIndex = 7
@@ -141,7 +143,7 @@ Partial Class landing
         LinkLabel1.ForeColor = SystemColors.Control
         LinkLabel1.LinkBehavior = LinkBehavior.NeverUnderline
         LinkLabel1.LinkColor = Color.White
-        LinkLabel1.Location = New Point(855, 33)
+        LinkLabel1.Location = New Point(859, 36)
         LinkLabel1.Name = "LinkLabel1"
         LinkLabel1.Size = New Size(55, 21)
         LinkLabel1.TabIndex = 1
@@ -157,7 +159,7 @@ Partial Class landing
         Label2.ForeColor = SystemColors.Control
         Label2.Image = CType(resources.GetObject("Label2.Image"), Image)
         Label2.ImageAlign = ContentAlignment.MiddleLeft
-        Label2.Location = New Point(69, 27)
+        Label2.Location = New Point(68, 28)
         Label2.Name = "Label2"
         Label2.Size = New Size(200, 30)
         Label2.TabIndex = 8
@@ -419,28 +421,41 @@ Partial Class landing
         Label6.TabIndex = 10
         Label6.Text = "AVAILABLE"
         ' 
+        ' Panel1
+        ' 
+        Panel1.Controls.Add(Label1)
+        Panel1.Controls.Add(Label2)
+        Panel1.Controls.Add(LinkLabel3)
+        Panel1.Controls.Add(menu)
+        Panel1.Controls.Add(LinkLabel1)
+        Panel1.Controls.Add(Button2)
+        Panel1.Controls.Add(Button1)
+        Panel1.Location = New Point(0, -1)
+        Panel1.Name = "Panel1"
+        Panel1.Size = New Size(1283, 668)
+        Panel1.TabIndex = 12
+        ' 
         ' landing
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = SystemColors.ActiveCaption
+        BackColor = Color.Black
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(1284, 661)
         Controls.Add(menuPanel)
-        Controls.Add(Label2)
-        Controls.Add(menu)
-        Controls.Add(Button2)
-        Controls.Add(Button1)
         Controls.Add(searchBox)
-        Controls.Add(LinkLabel3)
-        Controls.Add(LinkLabel1)
-        Controls.Add(Label1)
+        Controls.Add(Panel1)
+        DoubleBuffered = True
         Name = "landing"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Landing"
+        TopMost = True
+        TransparencyKey = Color.Black
         menuPanel.ResumeLayout(False)
         menuPanel.PerformLayout()
+        Panel1.ResumeLayout(False)
+        Panel1.PerformLayout()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -476,5 +491,6 @@ Partial Class landing
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents myPurchaseLinl As LinkLabel
+    Friend WithEvents Panel1 As Panel
 
 End Class
