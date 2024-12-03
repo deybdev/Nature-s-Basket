@@ -2,7 +2,8 @@
 
 Public Class register
     Private Sub LinkLabel4_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel4.LinkClicked
-
+        login.Show()
+        Me.Hide()
     End Sub
 
     Private Sub regButton_Click(sender As Object, e As EventArgs) Handles regButton.Click

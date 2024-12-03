@@ -46,7 +46,6 @@ Partial Class register
         emailBox = New TextBox()
         Label2 = New Label()
         Panel1 = New Panel()
-        LinkLabel2 = New LinkLabel()
         LinkLabel1 = New LinkLabel()
         Panel2.SuspendLayout()
         Panel3.SuspendLayout()
@@ -319,28 +318,12 @@ Partial Class register
         ' Panel1
         ' 
         Panel1.BackColor = Color.ForestGreen
-        Panel1.Controls.Add(LinkLabel2)
         Panel1.Controls.Add(LinkLabel1)
         Panel1.Controls.Add(Label2)
         Panel1.Location = New Point(-51, -2)
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(1338, 100)
         Panel1.TabIndex = 4
-        ' 
-        ' LinkLabel2
-        ' 
-        LinkLabel2.AutoSize = True
-        LinkLabel2.BackColor = Color.Transparent
-        LinkLabel2.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold)
-        LinkLabel2.ForeColor = SystemColors.Control
-        LinkLabel2.LinkBehavior = LinkBehavior.NeverUnderline
-        LinkLabel2.LinkColor = Color.White
-        LinkLabel2.Location = New Point(1205, 39)
-        LinkLabel2.Name = "LinkLabel2"
-        LinkLabel2.Size = New Size(78, 21)
-        LinkLabel2.TabIndex = 14
-        LinkLabel2.TabStop = True
-        LinkLabel2.Text = "About Us"
         ' 
         ' LinkLabel1
         ' 
@@ -350,7 +333,7 @@ Partial Class register
         LinkLabel1.ForeColor = SystemColors.Control
         LinkLabel1.LinkBehavior = LinkBehavior.NeverUnderline
         LinkLabel1.LinkColor = Color.White
-        LinkLabel1.Location = New Point(1109, 39)
+        LinkLabel1.Location = New Point(1242, 40)
         LinkLabel1.Name = "LinkLabel1"
         LinkLabel1.Size = New Size(55, 21)
         LinkLabel1.TabIndex = 13
